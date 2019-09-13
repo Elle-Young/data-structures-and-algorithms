@@ -13,7 +13,13 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  let regex = /\d/gi;
+
+  if (regex.test(input)) {
+    return true;
+  } else{
+    return false;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,6 +32,19 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  //input is equal to a string
+  //regx finds all words starting with a capital letter
+  //console.log(found words)
+  //isCapitalized then puts all words found into an empty array
+  //return new array
+  let regex = /\b[A-Z]*/gi;
+  let arr = [];
+  if (regex.test(str)){
+    arr.push(regex);
+    return arr;
+  }else{
+    console.log('does not have capitals')
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
