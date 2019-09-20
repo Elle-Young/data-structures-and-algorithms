@@ -68,11 +68,12 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-    let starWarsNames = people.reduce((answerSoFar, person) =>{
-        if(person.role !== ''){
-          answerSoFar.push(starWarsData.name);
+    let starWarsNames = people.reduce((accumulator, person) =>{
+      //let star wars names equal to Reduced people; where the acumulator and person from an array are taken into the function. The return is a new array representing all names at /people.name/ .
+        if(person.name !== ''){
+          accumulator.push(starWarsData.name);
         }
-        return answerSoFar;
+        return accumulator;
       }, [])
   // Solution code here...
 };
@@ -171,9 +172,11 @@ const isPrime = (value) => {
   return value > 1;
 };
 
-const countPrimeNumbers = (arr) => {
+let numArrRand = [1, 3, 5, 7, 88, 2, 144]
+
+const countPrimeNumbers = (numArrRand) => {
   // Solution code here...
-};
+}; 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
