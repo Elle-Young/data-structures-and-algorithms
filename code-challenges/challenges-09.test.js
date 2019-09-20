@@ -9,15 +9,14 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
-};
+  // Solution code here... 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
 Write a function named returnNames that, given the Star Wars data, below, uses reduce to return an array containing the names of the characters.
 ------------------------------------------------------------------------------------------------ */
-
+// name is the first property in the object 
 let starWarsData = [{
   name: 'Luke Skywalker',
   height: '172',
@@ -69,6 +68,12 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
+    let starWarsNames = people.reduce((answerSoFar, person) =>{
+        if(person.role !== ''){
+          answerSoFar.push(starWarsData.name);
+        }
+        return answerSoFar;
+      }, [])
   // Solution code here...
 };
 
