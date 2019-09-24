@@ -1,5 +1,6 @@
 'use strict';
-
+//skipped test means I don't have the answer yet
+//remember to x out the questions you don't have answers to, so that they are skipped during the testing 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
