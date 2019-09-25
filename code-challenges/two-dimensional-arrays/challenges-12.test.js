@@ -10,7 +10,9 @@ Write a function named grandTotal that adds up the cookies sales for each hour o
 For this example, the total at 9:00 a.m. is 17 + 26 + 7 + 5 + 33, or 88 total cookies.
 
 Return the array of the total number of cookies sold per hour for all of the stores combined.
+
 ------------------------------------------------------------------------------------------------ */
+console.log('--wow. I did not know I could hate salmon cookies more......--')
 
 const hoursOpen = ['9 a.m.', '10 a.m.', '11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.'];
 
@@ -24,6 +26,7 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
+  // use built in function SUM to add each const variable. 
 
 };
 
@@ -61,6 +64,13 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  console.log('currently psuedo coded in comments')
+  //return the quantity of treats needed to pick up from pet store. 
+
+  //where errands = the errands array, find store: 'Pet Store'.
+  //then find the items arr
+  //then find matching property of NAME: 'treats'
+  //return value of PetStore.Items[1].quantity. (return number of treats needed)
 };
 
 /* ------------------------------------------------------------------------------------------------
